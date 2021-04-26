@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Comprehend App</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom style for this UI -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Comprehend App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div id="content" class="card container bg-light">
+
+    <div id="loading"></div>
+    <img id="loading-image" src="/static/images/loading.gif" alt="Loading..." />
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="my-4 text-center">Comprehend Dashboard</h2>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <!-- Entity Viz -->
+      <div class="col-md-6">
+        <div class="card my-4">
+          <h5 class="card-header">Entities</h5>
+          <div class="card-body">
+            <div id="EntityChart"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sentiment Viz -->
+      <div class="col-md-6  ">
+        <div class="card my-4">
+          <h5 class="card-header">Sentiment</h5>
+          <div class="card-body">
+            <div id="SentimentChart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-1 bg-dark">
+    <div class="container">
+      <p class="m-auto text-center text-white">Comprehend App</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <!-- jQuery first, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- custom JS to enable tooltips -->
+  <script src="{{ url_for('static', filename='js/core.js') }}"></script>
+
+</body>
+
+</html>
