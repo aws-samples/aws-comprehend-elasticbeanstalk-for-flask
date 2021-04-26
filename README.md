@@ -37,6 +37,10 @@ This process can take about 5 minutes to complete. Once your application is succ
 the deployment URL should be returned in the command line, or you can run `eb open` to open 
 your application in the browser.
 
+## Credits and References:
+
+- [Plotly Documentation](https://plotly.com/javascript/)
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
