@@ -2,8 +2,8 @@
 
 The contents of this repository provide a example Flask application that passes user-provided data to Amazon Comprehend and visualizes the results using Plotly. The steps below also demonstrate how to deploy this application to Amazon Elastic Beanstalk.
 
-**NOTE:** This repository is designed to supplement an APG library guide, content for the guide can be viewed in Quip
-[here](https://quip-amazon.com/oDV5AclxbSXv/Comprehend-Flask-APG).
+
+**NOTE:** This repository is designed to supplement this APG library pattern: [Visualize AI/ML Model Results Using Flask and AWS Elastic Beanstalk](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/visualize-ai-ml-model-results-using-flask-and-aws-elastic-beanstalk.html).
 
 ### Steps to implement the application:
 1. Sign in to an AWS account with administrator privileges.
